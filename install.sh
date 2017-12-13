@@ -34,5 +34,6 @@ sudo apt install apt-transport-https ca-certificates curl software-properties-co
 
 sudo curl -L https://github.com/docker/compose/releases/download/1.17.0/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose \
   && sudo chmod +x /usr/local/bin/docker-compose
+bash <(curl -Ss https://raw.githubusercontent.com/dtulyakov/dotfiles/master/install.sh)
 
 #  && sudo apt-add-repository ppa:ansible/ansible -y
