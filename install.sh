@@ -23,6 +23,7 @@ sudo apt install apt-transport-https ca-certificates curl software-properties-co
      cowsay \
      rsync \
      git \
+     tmux \
      linux-image-extra-$(uname -r) \
      linux-image-extra-virtual \
   && sudo usermod -aG docker $USER
