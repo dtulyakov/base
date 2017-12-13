@@ -7,7 +7,10 @@ set -x
 sudo apt update -qq
 sudo apt install apt-transport-https ca-certificates curl software-properties-common -yqq \
   && curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add - \
+  && curl -fsSL https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add - \
+  && curl -fsSL https://www.virtualbox.org/download/oracle_vbox.asc -O- | sudo apt-key add - \
   && sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" \
+  && sudo add-apt-repository "deb http://download.virtualbox.org/virtualbox/debian $(lsb_release -cs) contrib" \
   && sudo apt update -qq \
   && sudo apt install -yqq \
      docker-ce \
