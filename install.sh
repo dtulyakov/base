@@ -27,6 +27,7 @@ sudo apt install apt-transport-https ca-certificates curl software-properties-co
      rsync \
      git \
      tmux \
+     virtualbox-5.2 \
      linux-image-extra-$(uname -r) \
      linux-image-extra-virtual \
   && sudo usermod -aG docker $USER
