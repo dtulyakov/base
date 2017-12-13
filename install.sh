@@ -2,7 +2,7 @@
 
 ######## SET
 FDATE=$(/bin/date '+%Y/%m/%d')
-set -x
+#set -x
 ######## SCRIPTS
 apt update -qq
 apt install apt-transport-https ca-certificates curl software-properties-common -yqq \
